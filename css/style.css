@@ -61,7 +61,39 @@ h1, p {
 #occupation {
   background-color: grey;
   font-weight: 600;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   padding-top: 15px;
 }
 
+#brand {
+  /* hiding the job description */
+  display: none;
+}
+
+#offer {
+  /* pad the top and bottom if the #offer to even it out  */
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+#contact {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+#contact > p {
+  /* adjust the p tag inside the #contact section to align and justify the centering hignten the size of the bar */
+  height: 60px;
+  width: 50%;
+  background-color: rgb(7, 15, 122);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+
+  }
+}
