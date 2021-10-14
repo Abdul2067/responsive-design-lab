@@ -94,6 +94,48 @@ h1, p {
 
 @media only screen and (min-width: 600px) {
   main {
+    display: grid;
+    text-align: left;
+    width: 550px;
+    grid-template-columns: 40% 60%;
+    /* background-color: blue; */
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+      "status name"
+      "img occupation"
+      "img brand" 
+      "contact offer";
+  }
+  img {
+    grid-area: img;
+    margin: 0 auto;
+  }
+  status {
+    text-align: left;
+    padding: 10px 0 0 20px
+  }
+  
+  #brand {
+    display: inline;
+    padding-top: 15px;
+  }
 
+  #offer {
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #occupation {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
+
+/* #contact {
+  display: flex;
+  justify-content: flex-end;
+} */
+
